@@ -47,3 +47,15 @@
 }
 ```
 -  Crear archivo inicial de proyecto app.js
+
+### Configuracion basica de un servidor
+```javascript
+// app.js
+const express = require('express');
+const app = express();
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, console.log(`Servidor corriendo... en localhost:${PORT}`));
+```
+-  Correr servidor con:
+`npm run server`
